@@ -15,8 +15,8 @@ rm -fr $CACHE_DIR
 mkdir -p $CACHE_DIR
 
 # Versions.
-#PYTHON_VERSION="python-3.4.2"
-PYTHON_VERSION="python-2.7.3"
+PYTHON_VERSION="python-3.4.2"
+#PYTHON_VERSION="python-2.7.3"
 PYTHON_STACK="cedar"
 NGINX_VERSION="nginx-1.7.2"
 PCRE_VERSION='pcre-8.36'
@@ -39,6 +39,8 @@ export C_INCLUDE_PATH=$CACHE_DIR/$PYTHON_VERSION/include
 export CPLUS_INCLUDE_PATH=$CACHE_DIR/$PYTHON_VERSION/include
 export LIBRARY_PATH=$CACHE_DIR/$PYTHON_VERSION/lib
 export LD_LIBRARY_PATH=$CACHE_DIR/$PYTHON_VERSION/lib
+
+sudo apt-get install libssl-dev openssl
 
 puts-step "Ensure pip"
 python -m ensurepip | indent
