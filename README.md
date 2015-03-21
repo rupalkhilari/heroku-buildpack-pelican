@@ -4,7 +4,7 @@ heroku-buildpack-pelican
 This is a heroku buildpack for Pelican.
 
 ```bash
-$ heroku config:set BUILDPACK_URL=https://github.com/getpelican/heroku-buildpack-pelican
+$ heroku config:set BUILDPACK_URL=https://github.com/rupalkhilari/heroku-buildpack-pelican
 ```
 
 ## Configuration
