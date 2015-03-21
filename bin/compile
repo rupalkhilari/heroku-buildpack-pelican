@@ -43,7 +43,7 @@ export LD_LIBRARY_PATH=$CACHE_DIR/$PYTHON_VERSION/lib
 #sudo apt-get install libssl-dev openssl
 
 wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-python get-pip.py --user
+python get-pip.py
 
 puts-step "Ensure pip"
 python -m ensurepip | indent
