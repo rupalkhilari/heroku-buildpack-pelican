@@ -40,7 +40,7 @@ if [[ ! -d "$CACHE_DIR/$DISTRIBUTE_VERSION" ]]; then
   puts-step "Done with curl"
   cd $DISTRIBUTE_VERSION
   puts-step "Done with cd"
-  python setup.py install &> /dev/null
+  python setup.py install
   puts-step "Done with distribute setup"
 fi
 
